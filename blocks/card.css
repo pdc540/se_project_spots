@@ -3,6 +3,7 @@
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -14,7 +15,7 @@
 
 .card__title {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -45,11 +46,10 @@
 @media screen and (max-width: 645px) {
   .card__image {
     height: 288px;
-    border-radius: 8px;
   }
   .card__title {
     line-height: 16px;
-    font-style: 16px;
+    font-size: 16px;
   }
   .card__like-button {
     width: 20px;
