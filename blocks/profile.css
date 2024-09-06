@@ -135,6 +135,8 @@
 
   .profile__edit-button {
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .profile__add-button {
