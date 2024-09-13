@@ -88,7 +88,7 @@
   cursor: pointer;
 }
 
-.edit-button__pencil {
+.profile__edit-button-image {
   opacity: 70%;
 }
 
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.profile__edit-button:hover .edit-button__pencil {
+.profile__edit-button:hover .profile__edit-button-image {
   opacity: 100%;
 }
 
