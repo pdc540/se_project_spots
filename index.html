@@ -44,6 +44,7 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
+                <button type="button" class="card__delete-button"></button>
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
@@ -83,6 +84,52 @@
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
+      </div>
+
+      <!-- -->
+      <div class="modal" id="newpostmodal">
+        <div class="modal__container">
+          <button
+            type="submit"
+            class="modal__close-btn"
+            id="newpostmodalclosebtn"
+          ></button>
+          <h2 class="modal__title">New post</h2>
+          <form name="new-post" class="modal__form">
+            <label for="imglink" class="modal__label">
+              Image link
+              <input
+                type="text"
+                class="modal__input"
+                id="imglink"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label for="caption" class="modal__label">
+              Caption
+              <input
+                type="text"
+                class="modal__input"
+                id="caption"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+      -
+    </div>
+
+    <div class="modal" id="modal-preview">
+      <div class="modal__container modal__container_type_preview">
+        <button
+          type="submit"
+          class="modal__close-btn modal__close-btn_type_preview"
+          id="previewmodalclosebtn"
+        ></button>
+        <img class="modal__image" src="" alt="" />
+        <p class="modal__caption"></p>
       </div>
     </div>
     <script src="./scripts/index.js" defer></script>
