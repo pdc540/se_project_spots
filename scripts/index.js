@@ -30,13 +30,8 @@ const initialCards = [
   },
 
   {
-    name: "Idk",
+    name: "Landscape test",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
-  },
-
-  {
-    name: "Val Thorens",
-    link: "../images/1-photo-by-moritz-feldmann-from-pexels.jpg",
   },
 ];
 
@@ -171,10 +166,10 @@ function addNewCard(link, caption) {
     .querySelector(".card")
     .cloneNode(true);
   const newCardNameElement = newCardElement.querySelector(".card__title");
-  newCardNameElement.textContent = caption;
+  newCardNameElement.textContent = caption.value;
   const newCardImageElement = newCardElement.querySelector(".card__image");
-  newCardImageElement.src = link;
-  newCardImageElement.alt = caption;
+  newCardImageElement.src = link.value;
+  newCardImageElement.alt = caption.value;
 
   const newCardLikeBtn = newCardElement.querySelector(".card__like-button");
   const newCardDeleteBtn = newCardElement.querySelector(".card__delete-button");
