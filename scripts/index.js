@@ -1,32 +1,32 @@
 const initialCards = [
   {
     name: "Estes Park, Colorado",
-    link: "../images/estes.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/estes_qmpcre.jpg",
   },
 
   {
     name: "Barcelona, Spain",
-    link: "../images/barcelona.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/barcelona_tn03q3.jpg",
   },
 
   {
     name: "Ibiza, Spain",
-    link: "../images/ibitha.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/ibitha_ffcz8r.jpg",
   },
 
   {
     name: "New York City, NY",
-    link: "../images/nyc.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/barcelona_tn03q3.jpg",
   },
 
   {
     name: "Oahu, Hawaii",
-    link: "../images/oahu.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/oahu_mvs0sx.jpg",
   },
 
   {
     name: "Las Vegas, Nevada",
-    link: "../images/vegas.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/vegas_kidv1i.jpg",
   },
 
   {
