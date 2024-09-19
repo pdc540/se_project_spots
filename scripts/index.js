@@ -16,7 +16,7 @@ const initialCards = [
 
   {
     name: "New York City, NY",
-    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/barcelona_tn03q3.jpg",
+    link: "https://res.cloudinary.com/dazkjajdh/image/upload/v1726718810/nyc_rnbc33.jpg",
   },
 
   {
