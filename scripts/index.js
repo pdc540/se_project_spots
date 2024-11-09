@@ -68,14 +68,26 @@ const previewCloseBtn = document.querySelector("#previewmodalclosebtn");
 
 // universal 'modal' opener
 
+let currentModal = null;
+
+function escapeModal(evt) {
+  if (evt.key == "Escape") {
+    closeModal(currentModal);
+  }
+}
+
 function openModal(custommodal) {
+  currentModal = custommodal;
   custommodal.classList.add("modal_opened");
+  document.addEventListener("keydown", escapeModal);
 }
 
 // universal 'modal' closer
 
 function closeModal(custommodal) {
   custommodal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", escapeModal);
+  currentModal = null;
 }
 //
 
@@ -121,6 +133,7 @@ editProfileBtn.addEventListener("click", function () {
   openModal(editModal);
   nameInput.value = profileName.textContent;
   descInput.value = profileDesc.textContent;
+  resetValidation(profileForm, [nameInput, descInput], settings);
 });
 
 profileCloseBtn.addEventListener("click", function () {
@@ -155,7 +168,7 @@ initialCards.forEach(function (item) {
 });
 
 function handleNewPostFormSubmit(evt) {
-  //update profile name and description function
+  //update new card function
   evt.preventDefault();
 
   const inputValues = {
@@ -165,9 +178,20 @@ function handleNewPostFormSubmit(evt) {
   const newCardElement = getCardElement(inputValues);
   cardsList.prepend(newCardElement);
 
-  closeModal(newPostModal);
+  disableButton(newPostSaveBtn, settings);
+
   linkInput.value = "";
   captionInput.value = "";
+  closeModal(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);
+
+const modals = [editModal, newPostModal];
+modals.forEach((modal) => {
+  modal.addEventListener("click", function (evt) {
+    if (evt.target == modal) {
+      closeModal(modal);
+    }
+  });
+});
