@@ -76,16 +76,16 @@ function escapeModal(evt) {
   }
 }
 
-function openModal(custommodal) {
-  currentModal = custommodal;
-  custommodal.classList.add("modal_opened");
+function openModal(customModal) {
+  currentModal = customModal;
+  customModal.classList.add("modal_opened");
   document.addEventListener("keydown", escapeModal);
 }
 
 // universal 'modal' closer
 
-function closeModal(custommodal) {
-  custommodal.classList.remove("modal_opened");
+function closeModal(customModal) {
+  customModal.classList.remove("modal_opened");
   document.removeEventListener("keydown", escapeModal);
   currentModal = null;
 }
@@ -187,7 +187,7 @@ function handleNewPostFormSubmit(evt) {
 
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);
 
-const modals = [editModal, newPostModal];
+const modals = [editModal, newPostModal, previewModal];
 modals.forEach((modal) => {
   modal.addEventListener("click", function (evt) {
     if (evt.target == modal) {
