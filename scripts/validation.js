@@ -38,14 +38,14 @@ const resetValidation = (formElement, inputList, config) => {
 const showInputError = (formElement, inputElement, errorMessage, config) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   errorElement.textContent = errorMessage;
-  errorElement.classList.add(inputActiveErrorClass);
+  errorElement.classList.add(config.inputActiveErrorClass);
   inputElement.classList.add(config.inputErrorClass);
 };
 
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   errorElement.textContent = "";
-  errorElement.classList.remove(inputActiveErrorClass);
+  errorElement.classList.remove(config.inputActiveErrorClass);
   inputElement.classList.remove(config.inputErrorClass);
 };
 
