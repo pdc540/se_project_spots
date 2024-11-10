@@ -48,8 +48,6 @@ const profileDesc = document.querySelector(".profile__description");
 const nameInput = editModal.querySelector("#name");
 const descInput = editModal.querySelector("#description");
 
-const submitButton = editModal.querySelector(".modal__submit-btn");
-
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
@@ -57,7 +55,7 @@ const newPostModal = document.querySelector("#newpostmodal");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostBtn = document.querySelector(".profile__add-button");
 const newPostCloseBtn = document.querySelector("#newpostmodalclosebtn");
-const newPostSaveBtn = newPostModal.querySelector(".modal__submit-btn");
+const newPostSaveBtn = newPostModal.querySelector(".modal__submit-btn"); //
 const linkInput = newPostModal.querySelector("#imglink");
 const captionInput = newPostModal.querySelector("#caption");
 
