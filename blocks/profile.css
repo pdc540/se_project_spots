@@ -18,7 +18,7 @@
 
 .profile__name {
   margin: 0 0 12px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
@@ -34,7 +34,7 @@
 
 .profile__description {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -50,7 +50,7 @@
 
 .profile__edit-button {
   margin-top: auto;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -65,7 +65,7 @@
 
 .profile__add-button {
   margin-left: auto;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;

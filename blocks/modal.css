@@ -68,7 +68,7 @@
 }
 
 .modal__title {
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
@@ -82,7 +82,7 @@
 }
 
 .modal__label {
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 17.6px;
@@ -215,7 +215,7 @@
 
   .modal__input {
     margin-bottom: 24px;
-    font-family: Poppins;
+    font-family: Poppins, Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
   }
